@@ -6,6 +6,8 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          and Yu Xin.
 """  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
+import math
+
 
 def main():
     """ TESTs the functions in this module (by calling them). """
@@ -31,10 +33,10 @@ def double_a_float():
          -6.28
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
-    a=int(input("enter a float"))
+    a=float(input("enter a float"))
     a=a*2
     print(a)
 
@@ -65,9 +67,12 @@ def print_an_integer_many_times():
          10
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+    a=int(input("Please Enter a Positive Integer"))
+    for _ in range(a):
+        print(a*2)
 
 
 def print_an_integer_many_times_on_one_row():
@@ -84,12 +89,17 @@ def print_an_integer_many_times_on_one_row():
          1010101010
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #   The testing code is already written for you (above).
     #
     # HINT: One way to print on a SINGLE line is to build up a string
     #       and then print that (single) string.
     # -------------------------------------------------------------------------
+    a=int(input("Enter a Positive Integer"))
+    b=""
+    for _ in range(a):
+        b=b+str(a*2)
+    print(b)
 
 
 def input_it_all():
@@ -124,9 +134,16 @@ def input_it_all():
          Peace & Love.
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+    a=float(input("A float"))
+    b=int(input("a integer"))
+    c=input("a string")
+    for _ in range(b):
+        print(math.sqrt(a))
+    for _ in range(b):
+        print(c)
 
 
 # -----------------------------------------------------------------------------
